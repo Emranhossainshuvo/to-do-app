@@ -1,7 +1,18 @@
 
+import { useContext } from "react";
 import { FaPlus } from "react-icons/fa";
+import { TaskContext } from "../../Providers/TaskProvider";
 
 const Sidebar = () => {
+
+    const { openForm, setOpenForm } = useContext(TaskContext);
+
+
+    const handleAddTask = () => {
+        setOpenForm(true)
+    }
+    console.log(openForm)
+
     return (
         <>
             {/* this div will contain everything in this component */}
@@ -60,7 +71,7 @@ const Sidebar = () => {
                     </div>
                 </div>
             </div>
-            <button className="flex bg-[#0d062d] text-white w-full rounded-3xl h-12 justify-center items-center mt-4">
+            <button onClick={handleAddTask} className="flex bg-[#0d062d] text-white w-full rounded-3xl h-12 justify-center items-center mt-4">
                 <FaPlus />   Add task
             </button>
         </>
