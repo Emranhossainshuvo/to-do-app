@@ -5,8 +5,10 @@ const Home = () => {
     return (
         <div>
             <Navbar />
-            <div>
+            <div className="w-full">
+                <div className="w-[16%]">
                 <Sidebar />
+                </div>
             </div>
         </div>
     );

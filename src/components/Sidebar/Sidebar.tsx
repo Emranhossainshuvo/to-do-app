@@ -1,5 +1,5 @@
-import { MdError } from "react-icons/md";
 
+import { FaPlus } from "react-icons/fa";
 
 const Sidebar = () => {
     return (
@@ -60,6 +60,9 @@ const Sidebar = () => {
                     </div>
                 </div>
             </div>
+            <button className="flex bg-[#0d062d] text-white w-full rounded-3xl h-12 justify-center items-center mt-4">
+                <FaPlus />   Add task
+            </button>
         </>
     );
 };
