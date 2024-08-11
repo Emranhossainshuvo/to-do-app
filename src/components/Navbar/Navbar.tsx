@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <>
             {/* main div to hold everything */}
-            <div className="flex rounded-2xl mt-12 justify-between h-20 px-4 bg-[#ecedee] items-center">
+            <div className="flex rounded-2xl mt-12 justify-between h-20 px-4 shadow-[#c4c5c6] shadow-md bg-[#ecedee] items-center">
                 <div className="relative" >
                     <IoMdSearch className="absolute z-10 top-2 left-2 text-gray-500" />
                     <input placeholder="Search..." className="h-8 pl-8 shadow-[#c4c5c6] shadow-md outline-none rounded-3xl" type="text" />
