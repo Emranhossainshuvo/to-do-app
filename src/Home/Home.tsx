@@ -10,7 +10,7 @@ const Home = () => {
                 <div className="w-[16%]">
                     <Sidebar />
                 </div>
-                <div className="w-full bg-gray-300 ">
+                <div className="w-full">
                     <ToDoContents />
                 </div>
             </div>
